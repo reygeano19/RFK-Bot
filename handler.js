@@ -269,7 +269,7 @@ module.exports = {
           antitroli: true,
           backup: false,
           backupDB: 0,
-          groupOnly: true,
+          groupOnly: false,
           jadibot: true,
           onsfw: false,
           status: 0,
