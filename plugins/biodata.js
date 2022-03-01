@@ -3,15 +3,15 @@ let handler = async (m, { conn, text }) => {
   let ext= `
 *INFORMATION OWNER*
 
-*Name* : ./RyuuZeyy
-*Age* : 8 th
-*Kelas* : 5 SD
-*Status* : Only God can make me strong
+*Name* : Koko Pangeran
+*Age* : 6 th
+*Kelas* : 4 SD
+*Status* : Sendiri Gatau Ngapain😌
 
 *MEDIA SOCIAL*
 
-*Instagram.com/bah.raid
-*GitHub.com/RTeam1*
+https://instagram.com/pangerann21_
+
 *Facebook* : --
 *Youtube* : --
 
