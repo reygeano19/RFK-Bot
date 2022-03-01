@@ -19,7 +19,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['getpp @user']
 handler.tags = ['group']
 handler.command = /^getpp$/i
-
+handler.premium = true
 handler.group = true
 
 module.exports = handler
