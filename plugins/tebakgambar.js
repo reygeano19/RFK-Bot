@@ -29,5 +29,6 @@ Bonus: ${poin} XP
 handler.help = ['tebakgambar']
 handler.tags = ['game']
 handler.command = /^tebakgambar/i
+handler.premium = true
 
 module.exports = handler
