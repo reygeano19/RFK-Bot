@@ -13,5 +13,6 @@ handler.premium = false
 handler.register = true
 handler.limit = 5
 handler.private = true
+handler.premium = true
 
 module.exports = handler
