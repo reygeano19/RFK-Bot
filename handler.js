@@ -4,7 +4,7 @@ modepublic = true
 autoreyad = false
 autoon = false
 autoketik = false
-autovn = false
+autovn = true
 
 
 
@@ -211,7 +211,7 @@ module.exports = {
             name: this.getName(m.sender),
             age: -1,
             regTime: -1,
-            autolevelup: true,
+            autolevelup: false,
             lastIstigfar: 0,
         }
 
@@ -240,13 +240,13 @@ module.exports = {
           sBye: '',
           sPromote: '',
           sDemote: '',
-          descUpdate: true,
-          delete: false,
-          rpg: true,
+          descUpdate: false,
+          delete: true,
+          rpg: false,
           nsfw: false,
           antiBadword: true,
           antiLink: false,
-          viewonce: true,
+          viewonce: false,
         }
         
                 let settings = global.db.data.settings[this.user.jid]
@@ -270,8 +270,8 @@ module.exports = {
           backup: false,
           backupDB: 0,
           groupOnly: false,
-          jadibot: false,
-          onsfw: true,
+          jadibot: true,
+          onsfw: false,
           status: 0,
         }
       } catch (e) {
@@ -610,10 +610,10 @@ global.dfail = (type, m, conn) => {
     rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
     owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
     mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+    premium: '_*Fitur Ini Khusus Istriku Saja‼️(PREMIUM)*_',
     group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
+    private: '_*Di Chat Pribadi Sayangku😚*_',
+    admin: '_*Lah Emg Lo Admin Group Sini Anj‼️*_',
     nsfw: 'Perintah ini hanya bisa diaktifkan oleh owner',
     botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
     unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar ${name}.16*`
