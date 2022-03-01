@@ -21,7 +21,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 }
 handler.help = ['tovideo']
 handler.tags = ['sticker']
-
 handler.command = ['tovideo']
+handler.premium = true
 
 module.exports = handler
