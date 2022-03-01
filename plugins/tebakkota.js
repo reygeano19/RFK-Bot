@@ -31,5 +31,6 @@ Ketik ${usedPrefix}teko untuk bantuan
 handler.help = ['tebakkota']
 handler.tags = ['game']
 handler.command = /^tebakkota/i
+handler.premium = true
 
 module.exports = handler
