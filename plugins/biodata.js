@@ -11,7 +11,7 @@ let handler = async (m, { conn, text }) => {
 *MEDIA SOCIAL*
 
 https://instagram.com/pangerann21_
-
+wa.me/6287832147584 Owner×Bot🗿
 *Facebook* : --
 *Youtube* : --
 
