@@ -29,9 +29,9 @@ supaya saya menambahkan nama Anda disini
 >>> BOLEH MENAMBAHKAN, JANGAN MENGHILANGKAN <<<
 */
 
-global.linkGC = ['https://chat.whatsapp.com/EVCGfzxLWfp81n0WhmVklH', 'https://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
+global.linkGC = ['']// ganti jadi group lu
 
-//Berbagai itu indah @Parel / Rxfly
+//Berbagai itu indah @Parel / Rx
 global.owner = ['6287832147584', '6287832147584', '6287832147584'] // Put your number here
 global.mods = ['0'] // Want some help?
 global.prems = ['0'] // Premium user has unlimited limit
