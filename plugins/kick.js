@@ -12,9 +12,9 @@ handler.command = /^(kick|rk|k|\-)$/i
 
 handler.group = true
 handler.private = false
-handler.premium = true
+handler.premium = false
 
-handler.rowner = true
+handler.admin = true
 handler.botAdmin = true
 
 handler.fail = null
