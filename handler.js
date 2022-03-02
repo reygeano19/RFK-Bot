@@ -5,7 +5,7 @@ autoreyad = false
 autoon = false
 autoketik = false
 autovn = true
-
+autobio = false
 
 
 let util = require('util')
