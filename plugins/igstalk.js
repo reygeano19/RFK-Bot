@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args[0]) throw `contoh:\n${usedPrefix + command} pangerann21_`
 
-  let res = await fetch(global.API('xteam', '/igs', { username: args[0] }))
+  let res = await fetch(global.API('lol', '/igs', { username: args[0] }))
   if (!res.ok) throw eror
   let json = await res.json()
   if (json.status != 200) throw json
@@ -12,4 +12,5 @@ handler.help = ['igstalk <username>']
 handler.tags = ['tools']
 handler.command = /^(igstalk)$/i
 handler.limit = true
+handler.premium = true
 module.exports = handler
