@@ -59,8 +59,8 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 //global.packname = 'ig:@pangerann21_'
 //global.author = '©Koko Pangeran'
-global.packname = 'ig:@pangerann21_\n©Koko Pangeran'
-global.author = ''
+global.packname = 'ig:@pangerann21_'
+global.author = '©Koko Pangeran'
 
 // silakan di ganti klo mau
 global.wait = '_*Tunggu Sebentar Sedang Di Ewe‼️*_'
@@ -103,7 +103,7 @@ lolkey = 'rey2k21'
 lolKey = 'rey2k21'
 
 
-footer = 'ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
+footer = '©ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
 namabot = 'ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
 bc = namabot
 //bc = 'ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
