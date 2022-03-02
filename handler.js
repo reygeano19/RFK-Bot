@@ -5,7 +5,7 @@ autoreyad = false
 autoon = false
 autoketik = false
 autovn = true
-autobio = false
+
 
 
 let util = require('util')
@@ -267,7 +267,7 @@ module.exports = {
           anticall: true,
           antispam: true,
           antitroli: true,
-          backup: false,
+          backup: true,
           backupDB: 0,
           groupOnly: false,
           jadibot: true,
