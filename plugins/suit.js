@@ -1,29 +1,39 @@
-const pilihan = ['batu', 'gunting', 'kertas']
-const Case = str => str[0].toUpperCase() + str.slice(1).toLowerCase()
-let handler = async (m, { text, usedPrefix }) => {
-    let salah = `Pilihan yang tersedia Gunting, Kertas, Batu\n\n*Contoh* : ${usedPrefix}suit gunting\n`
-    if (!text) throw salah
-    if (!pilihan.includes(text.toLowerCase())) throw salah
-    let suitP1 = pilihan.indexOf(text.toLowerCase())
-    let suitPC = Math.floor(Math.random() * 3)
-    let kamu = Case(pilihan[suitP1])
-    let bot = Case(pilihan[suitPC])
-    let state = `Kamu: ${kamu}\nBot: ${bot}`
-    let user = global.db.data.users[m.sender]
-    if (suitP1 === suitPC) {
-        user.exp += 100
-        m.reply(`*Kita Seri*\n\n${state}\n\nPoin (±)100 XP`)
-    } else if ((suitP1 + 1) % 3 === suitPC) {
-        user.exp += 300
-        m.reply(`*Kamu Menang*\n\n${state}\n\nPoin (+)300 XP`)
-    } else if ((suitP1 - 1) % 3 === suitPC) {
-        user.exp -= 300
-        m.reply(`*Kamu Kalah*\n\n${state}\n\nPoin (-)300 XP`)
-    } else throw 'Terjadi kesalahan'
+/* 
+    Made by https://github.com/syahrularranger 
+    Jangan di hapus credit nya :)
+*/
+let timeout = 60000
+let poin = 500
+let poin_lose = -100
+let handler = async (m, { conn, usedPrefix }) => {
+  conn.suit = conn.suit ? conn.suit : {}
+  if (Object.values(conn.suit).find(room => room.id.startsWith('suit') && [room.p, room.p2].includes(m.sender))) throw 'Selesaikan suit mu yang sebelumnya'
+  if (!m.mentionedJid[0]) return m.reply(`_Siapa yang ingin kamu tantang?_\nTag orangnya.. Contoh\n\n${usedPrefix}suit @${owner[1]}`, m.chat, { contextInfo: { mentionedJid: [owner[1] + '@s.whatsapp.net'] } })
+  if (Object.values(conn.suit).find(room => room.id.startsWith('suit') && [room.p, room.p2].includes(m.mentionedJid[0]))) throw `Orang yang kamu tantang sedang bermain suit bersama orang lain :(`
+  let id = 'suit_' + new Date() * 1
+  let caption = `
+_*SUIT PvP*_
+@${m.sender.split`@`[0]} menantang @${m.mentionedJid[0].split`@`[0]} untuk bermain suit
+Silahkan @${m.mentionedJid[0].split`@`[0]} 
+`.trim()
+  let footer = `Ketik "terima/ok/gas" untuk memulai suit\nKetik "tolak/gabisa/nanti" untuk menolak`
+  conn.suit[id] = {
+    chat: await conn.send2Button(m.chat, caption, footer, 'Terima', 'ok', 'Tolak', 'tolak', m, { contextInfo: { mentionedJid: conn.parseMention(caption) } }),
+    id: id,
+    p: m.sender,
+    p2: m.mentionedJid[0],
+    status: 'wait',
+    waktu: setTimeout(() => {
+      if (conn.suit[id]) conn.reply(m.chat, `_Waktu suit habis_`, m)
+      delete conn.suit[id]
+    }, timeout), poin, poin_lose, timeout
+  }
 }
-handler.help = ['suit [gunting|batu|kertas]']
 handler.tags = ['game']
-
-handler.command = /^suit$/i
+handler.help = ['suitpvp', 'suit'].map(v => v + ' @tag')
+handler.command = /^suit(pvp)?$/i
+handler.premium = true
+handler.group = true
+handler.game = true
 
 module.exports = handler
