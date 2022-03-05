@@ -267,11 +267,11 @@ module.exports = {
           anticall: true,
           antispam: true,
           antitroli: true,
-          backup: true,
+          backup: false,
           backupDB: 0,
           groupOnly: false,
           jadibot: true,
-          onsfw: false,
+          onsfw: true,
           status: 0,
         }
       } catch (e) {
