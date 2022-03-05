@@ -51,8 +51,8 @@ global.APIKeys = { // APIKey Here
   'https://api.xteam.xyz': 'expired',
   'https://api.lolhuman.xyz': 'rey2k21',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.me': 'apivinz',
-  'https://pencarikode.xyz': 'pais',
+  'https://api.zeks.me': 'apipangerantzy',
+  'https://pencarikode.xyz': 'V1DFQVSDQ27J629Y5K65FJU0',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
