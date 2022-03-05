@@ -49,7 +49,7 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
   'https://api.xteam.xyz': 'expired',
-  'https://api.lolhuman.xyz': 'rey2k21',
+  'https://api.lolhuman.xyz': '7fc314b6414b6ed2fc5c3058',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apipangerantzy',
   'https://pencarikode.xyz': 'V1DFQVSDQ27J629Y5K65FJU0',
@@ -97,10 +97,10 @@ const time = mumet().tz('Asia/Jakarta').format("HH:mm:ss DD:MM:YYYY")
 sukses = 'Suksesss...'
 
 // Mau Apa Lu? Mau ubah apikey? Awokaaokaowk Bocil
-Lolkey = 'rey2k21'
-LolKey = 'rey2k21'
-lolkey = 'rey2k21'
-lolKey = 'rey2k21'
+Lolkey = '7fc314b6414b6ed2fc5c3058'
+LolKey = '7fc314b6414b6ed2fc5c3058'
+lolkey = '7fc314b6414b6ed2fc5c3058'
+lolKey = '7fc314b6414b6ed2fc5c3058'
 
 
 footer = '©ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
