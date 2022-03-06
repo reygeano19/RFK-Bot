@@ -32,7 +32,7 @@ supaya saya menambahkan nama Anda disini
 global.linkGC = ['']// ganti jadi group lu
 
 //Berbagai itu indah @Parel / Rx
-global.owner = ['6287832147584', '6287832147584', '6287832147584'] // Put your number here
+global.owner = ['6285232604817', '6285232604817', '6285232604817'] // Put your number here
 global.mods = ['0'] // Want some help?
 global.prems = ['0'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -57,10 +57,10 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-//global.packname = 'ig:@pangerann21_'
-//global.author = '©Koko Pangeran'
-global.packname = 'ig:@pangerann21_'
-global.author = '©Koko Pangeran'
+//global.packname = 'ig:@callme_rey1921_'
+//global.author = '©Koko ReyGeano'
+global.packname = 'ig:@callme_rey1921_'
+global.author = '©Koko ReyGeano'
 
 // silakan di ganti klo mau
 global.wait = '_*Tunggu Sebentar Sedang Di Ewe‼️*_'
@@ -103,11 +103,11 @@ lolkey = '7fc314b6414b6ed2fc5c3058'
 lolKey = '7fc314b6414b6ed2fc5c3058'
 
 
-footer = '©ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
-namabot = 'ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
-bc = namabot
-//bc = 'ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
-namaowner = 'ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
+footer = '©It'sMe•KOKO•REY✓'
+namabot = 'It'sMe•KOKO•REY✓'
+bc = ReyBot
+//bc = 'It'sMe•KOKO•REY✓'
+namaowner = 'It'sMe•KOKO•REY✓'
 ceco = 'Ganteng 🗿'
 let tum = fs.readFileSync('./IMG-20220218-WA0242.jpg')
 let tum1 = fs.readFileSync('./IMG-20220218-WA0242.jpg')
